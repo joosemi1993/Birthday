@@ -9,15 +9,15 @@ export default function Auth() {
 
   const changeForm = () => {
     setIsLogin(!isLogin);
-  }
+  };
 
   return (
     <View style={styles.view}>
       <Image source={require("../assets/logo.png")} style={styles.logo} />
       {isLogin ? (
-        <LoginForm changeForm={changeForm} />
-      ) : (
         <RegisterForm changeForm={changeForm} />
+      ) : (
+        <LoginForm changeForm={changeForm} />
       )}
     </View>
   );
