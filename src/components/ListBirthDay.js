@@ -69,7 +69,7 @@ export default function ListBirthDay(props) {
   const deleteBirthday = (birthday) => {
     Alert.alert(
       "Eliminar cumpleaños",
-      `¿Estas seguro de eliminar el cumpleaños de ${birthday.name} ${birthday.lastname}`,
+      `¿Estas seguro de eliminar el cumpleaños de ${birthday.name} ${birthday.lastname}?`,
       [
         {
           text: "Cancelar",
