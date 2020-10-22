@@ -3,7 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 import AddBirthDay from "./AddBirthDay";
 import ActionBar from "./ActionBar";
 
-export default function ListBirthDay() {
+export default function ListBirthDay(props) {
+  const { user } = props;
   const [showList, setShowList] = useState(true);
 
   return (
@@ -18,7 +19,7 @@ export default function ListBirthDay() {
           <Text>LIST</Text>
         </>
       ) : (
-        <AddBirthDay />
+        <AddBirthDay user={user} setShowList={setShowList} />
       )}
       <ActionBar showList={showList} setShowList={setShowList} />
     </View>

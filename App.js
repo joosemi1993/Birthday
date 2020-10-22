@@ -28,7 +28,7 @@ export default function App() {
     <>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={styles.background}>
-        {user ? <ListBirthDay /> : <Auth />}
+        {user ? <ListBirthDay user={user} /> : <Auth />}
       </SafeAreaView>
     </>
   );
